@@ -2,12 +2,26 @@
   "name": "relay-suspsense-defer",
   "version": "0.1.0",
   "private": true,
+  "resolutions": {
+    "react": "16.5.0",
+    "react-dom": "16.5.0"
+  },
   "dependencies": {
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
-    "react-scripts": "2.1.0"
+    "apollo-server": "2.1.0-alpha.10",
+    "babel-plugin-relay": "2.0.0-rc.1",
+    "fetch-multipart-graphql": "^1.0.11",
+    "graphql": "^14.0.2",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
+    "react-relay": "2.0.0-rc.1",
+    "react-scripts": "2.1.0",
+    "relay-compiler": "2.0.0-rc.1",
+    "relay-experimental": "./relay-experimental-2.0.0-rc.1.tgz",
+    "relay-runtime": "2.0.0-rc.1"
   },
   "scripts": {
+    "relay": "node relayCompiler.js",
+    "server": "node server.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
